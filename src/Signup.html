@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up — Apex Motors</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">Apex Motors</div>
+    <nav class="nav-links">
+      <a href="login.html">Log in</a>
+      <a href="signup.html">Sign up</a>
+      <a href="vehicles.html">Vehicles</a>
+      <a href="history.html">My purchases</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Create an account</h1>
+
+    <form id="signup-form">
+      <label for="signup-fullname">Full name</label>
+      <input type="text" id="signup-fullname" required>
+
+      <label for="signup-username">Username</label>
+      <input type="text" id="signup-username" required>
+
+      <label for="signup-email">Email</label>
+      <input type="email" id="signup-email" required>
+
+      <label for="signup-password">Password</label>
+      <input type="password" id="signup-password" required>
+
+      <button type="submit">Sign up</button>
+    </form>
+    <p class="form-note error" id="signup-error"></p>
+
+    <div id="signup-confirm" class="confirm-box" style="display:none;">
+      <h3>✅ Account created</h3>
+      <p id="signup-confirm-text"></p>
+      <a class="btn" href="vehicles.html">Continue to vehicles</a>
+    </div>
+
+    <p class="form-note">Already have an account? <a href="login.html">Log in</a></p>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+</html>

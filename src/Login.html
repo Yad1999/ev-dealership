@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in — Apex Motors</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">Group L Automobile</div>
+    <nav class="nav-links">
+      <a href="login.html">Log in</a>
+      <a href="signup.html">Sign up</a>
+      <a href="vehicles.html">Vehicles</a>
+      <a href="history.html">My purchases</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Log in</h1>
+
+    <form id="login-form">
+      <label for="login-username">Username</label>
+      <input type="text" id="login-username" required>
+
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" required>
+
+      <button type="submit">Log in</button>
+    </form>
+    <p class="form-note error" id="login-error"></p>
+
+    <div id="login-confirm" class="confirm-box" style="display:none;">
+      <h3>✅ Logged in</h3>
+      <p id="login-confirm-text"></p>
+      <a class="btn" href="vehicles.html">Continue to vehicles</a>
+    </div>
+
+    <p class="form-note">No account yet? <a href="signup.html">Sign up</a></p>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
