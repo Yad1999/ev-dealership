@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group L Automobiles </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">Apex Motors</div>
+    <nav id="nav-links" class="nav-links">
+      
+    </nav>
+  </header>
+
+  <main class="content">
+
+    <!--  ------ LOGIN SCREEN --------- -->
+    <section id="screen-login" class="screen">
+      <h1>Log in</h1>
+      <form id="login-form">
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" required>
+
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" required>
+
+        <button type="submit">Log in</button>
+      </form>
+      <p class="form-note" id="login-error"></p>
+      <p class="form-note">No account yet?
+        <a href="#" data-goto="signup">Sign up</a>
+      </p>
+    </section>
+
+    <!-- ============ SIGN UP SCREEN ============ -->
+    <section id="screen-signup" class="screen">
+      <h1>Create an account</h1>
+      <form id="signup-form">
+        <label for="signup-fullname">Full name</label>
+        <input type="text" id="signup-fullname" required>
+
+        <label for="signup-username">Username</label>
+        <input type="text" id="signup-username" required>
+
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" required>
+
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" required>
+
+        <button type="submit">Sign up</button>
+      </form>
+      <p class="form-note" id="signup-error"></p>
+      <p class="form-note">Already have an account?
+        <a href="#" data-goto="login">Log in</a>
+      </p>
+    </section>
+
+    <!--  --------- VEHICLE CATALOGUE -------  -->
+    <section id="screen-vehicles" class="screen">
+      <h1>Available vehicles</h1>
+      <p class="subtitle">Browse vehicles pulled from the catalogue and pick one to purchase.</p>
+      <div id="vehicle-list" class="vehicle-list">
+      </div>
+    </section>
+
+    <!--  --------- PURCHASE SCREEEN-------- -->
+    <section id="screen-purchase" class="screen">
+      <h1>Complete your purchase</h1>
+      <div id="purchase-summary" class="purchase-summary">
+    
+      </div>
+
+      <form id="purchase-form">
+        <label for="purchase-name">Name on card</label>
+        <input type="text" id="purchase-name" required>
+
+        <label for="purchase-card">Card number</label>
+        <input type="text" id="purchase-card" placeholder="0000 0000 0000 0000" required>
+
+        <label for="purchase-address">Shipping / pickup address</label>
+        <input type="text" id="purchase-address" required>
+
+        <button type="submit">Confirm purchase</button>
+      </form>
+      <p class="form-note" id="purchase-error"></p>
+    </section>
+
+    <!--  ------------ PURCHASE HISTORYY ---------- -->
+    <section id="screen-history" class="screen">
+      <h1>Purchase history</h1>
+      <div id="history-list" class="history-list">
+        
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
